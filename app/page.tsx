@@ -84,7 +84,7 @@ function FlightPortal() {
 export default function Page() {
   const [query, setQuery] = useState(''); const [state, setState] = useState('All states'); const [sort, setSort] = useState('Featured'); const [selected, setSelected] = useState<Beach | null>(null); const [favorites, setFavorites] = useState<string[]>([]); const [menuOpen, setMenuOpen] = useState(false); const [visibleCount, setVisibleCount] = useState(24)
   const filtered = useMemo(() => {
-    const normalizeSearch = (value: string) => value.toLocaleLowerCase().replace(/\s+/g, '')
+    const normalizeSearch = (value: string) => value.toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '')
     const normalizedQuery = normalizeSearch(query.trim())
     const matchingState = Object.keys(catalogRegions).find((region) => normalizeSearch(region) === normalizedQuery)
     const activeState = matchingState ?? state
