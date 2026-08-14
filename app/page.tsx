@@ -84,11 +84,13 @@ function FlightPortal() {
 export default function Page() {
   const [query, setQuery] = useState(''); const [state, setState] = useState('All states'); const [sort, setSort] = useState('Featured'); const [selected, setSelected] = useState<Beach | null>(null); const [favorites, setFavorites] = useState<string[]>([]); const [menuOpen, setMenuOpen] = useState(false); const [visibleCount, setVisibleCount] = useState(24)
   const filtered = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase().replace(/\s+/g, ' ')
-    const matchingState = Object.keys(catalogRegions).find((region) => region.toLowerCase() === normalizedQuery)
+    const normalizeSearch = (value: string) => value.toLocaleLowerCase().replace(/\s+/g, '')
+    const normalizedQuery = normalizeSearch(query.trim())
+    const matchingState = Object.keys(catalogRegions).find((region) => normalizeSearch(region) === normalizedQuery)
     const activeState = matchingState ?? state
     return beaches.filter((b) => {
-      const matchesStateSearch = matchingState ? b.state === matchingState : !normalizedQuery || `${b.name} ${b.state} ${b.type} ${b.tags.join(' ')}`.toLowerCase().includes(normalizedQuery)
+      const searchableText = normalizeSearch(`${b.name} ${b.state} ${b.type} ${b.tags.join(' ')}`)
+      const matchesStateSearch = matchingState ? b.state === matchingState : !normalizedQuery || searchableText.includes(normalizedQuery)
       return matchesStateSearch && (activeState === 'All states' || b.state === activeState)
     }).sort((a, b) => sort === 'Rating' ? b.rating - a.rating : sort === 'Temperature' ? b.temp - a.temp : 0)
   }, [query, state, sort])
