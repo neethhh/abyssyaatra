@@ -64,5 +64,10 @@
 }
 .eyebrow { @apply text-xs font-bold uppercase tracking-[0.2em] text-primary; }
 .section-title { @apply mt-2 font-serif text-4xl font-medium tracking-tight sm:text-5xl; }
+.site-nav a { white-space: nowrap; }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .site-nav { gap: 1rem !important; }
+  .site-nav a { font-size: 0.8rem; line-height: 1.25rem; }
+}
 .font-serif { font-family: 'DM Serif Display', Georgia, serif; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
