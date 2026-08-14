@@ -3,9 +3,11 @@
 import { useMemo, useState } from 'react'
 import { ArrowRight, Car, ChevronDown, Compass, ExternalLink, Heart, Hotel, MapPin, Menu, Phone, Search, ShieldAlert, Star, Sun, Waves, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-
 type Beach = { name: string; state: string; type: string; rating: number; temp: number; water: string; tags: string[]; image: string }
-const photo = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=85`
+const photo = (name: string) => {
+  const lock = [...name].reduce((hash, char) => ((hash * 31) + char.charCodeAt(0)) >>> 0, 7)
+  return `https://loremflickr.com/1200/800/${encodeURIComponent(`${name},India,beach`)}?lock=${lock}`
+}
 const regions: Record<string, string[]> = {
   Gujarat: ['Mandvi Beach', 'Dumas Beach', 'Dwarka Beach', 'Nagoa Beach', 'Ghogla Beach', 'Tithal Beach', 'Ahmedpur Mandvi Beach', 'Porbandar Beach', 'Madhavpur Beach', 'Gopnath Beach', 'Ghogha Beach', 'Sarkhadi Beach', 'Pirotan Island Beach'],
   Maharashtra: ['Juhu Beach', 'Alibaug Beach', 'Tarkarli Beach', 'Kashid Beach', 'Ganpatipule Beach', 'Harihareshwar Beach', 'Aare Ware Beach', 'Bassein Beach', 'Dahanu Beach', 'Diveagar Beach', 'Murud Beach', 'Nagaon Beach', 'Shrivardhan Beach'],
@@ -34,9 +36,8 @@ const stateInfo: Record<string, { history: string; languages: string }> = {
   Lakshadweep: { history: 'Lakshadweep’s coral islands carry centuries of Indian Ocean navigation and island communities shaped by the sea.', languages: 'Malayalam, Jeseri, English' },
   Puducherry: { history: 'Puducherry blends Tamil coastal life with French colonial architecture and a distinctive multicultural history.', languages: 'Tamil, English, French, Telugu' },
 }
-const images = ['photo-1507525428034-b723cf961d3e', 'photo-1510414842594-a61c69b5ae57', 'photo-1473116763249-2faaef81ccda', 'photo-1544550285-f813152fb2fd', 'photo-1500534623283-312aade485b7', 'photo-1494783367193-149034c05e8f']
 const types = ['Island escape', 'Quiet cove', 'Cultural shore', 'Cliffside coast', 'Lively coast']
-const beaches: Beach[] = Object.entries(regions).flatMap(([state, names], stateIndex) => names.map((name, index) => ({ name, state, type: types[(stateIndex + index) % types.length], rating: Number((4.3 + ((stateIndex + index) % 7) / 10).toFixed(1)), temp: 27 + ((stateIndex + index) % 6), water: ['Calm', 'Gentle', 'Moderate', 'Clear'][(stateIndex + index) % 4], tags: [['Sunset', 'Swimming', 'Family'], ['Surfing', 'Quiet', 'Nature'], ['Food', 'Culture', 'Sunrise'], ['Wellness', 'Coconut groves', 'Stays']][(stateIndex + index) % 4], image: photo(`${images[(stateIndex + index) % images.length]}`) })))
+const beaches: Beach[] = Object.entries(regions).flatMap(([state, names], stateIndex) => names.map((name, index) => ({ name, state, type: types[(stateIndex + index) % types.length], rating: Number((4.3 + ((stateIndex + index) % 7) / 10).toFixed(1)), temp: 27 + ((stateIndex + index) % 6), water: ['Calm', 'Gentle', 'Moderate', 'Clear'][(stateIndex + index) % 4], tags: [['Sunset', 'Swimming', 'Family'], ['Surfing', 'Quiet', 'Nature'], ['Food', 'Culture', 'Sunrise'], ['Wellness', 'Coconut groves', 'Stays']][(stateIndex + index) % 4], image: photo(name) })))
 
 const hotelSeeds = ['Taj Exotica Resort & Spa', 'The Leela Palace', 'ITC Grand', 'Taj Holiday Village Resort', 'Radisson Blu Resort']
 const hotelsFor = (beach: Beach) => hotelSeeds.slice(0, 3).map((name, i) => ({ name: `${name} ${i === 0 ? '' : beach.state}`.trim(), location: `${beach.name} · ${i + 2} km`, rating: (4.7 - i * 0.1).toFixed(1), detail: ['Ocean-view rooms, spa and private beach', 'Pool, all-day dining and concierge', 'Wellness, breakfast and coastal transfers'][i], maps: `https://www.google.com/maps/search/${encodeURIComponent(`${name} near ${beach.name}, ${beach.state}`)}` }))
