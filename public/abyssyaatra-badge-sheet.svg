@@ -1,0 +1,99 @@
+<svg width="760" height="610" viewBox="0 0 760 610" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>AbyssYaatra badge system</title>
+<desc>Explorer badges for beaches photographed and community pulse badges for crowd status updates</desc>
+<rect width="760" height="610" fill="white"/>
+<text x="30" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="500" fill="#2C2C2A">Explorer badges — beaches photographed</text>
+<circle cx="132.5" cy="100" r="30" fill="#E1F5EE"/>
+<ellipse cx="126.5" cy="104" rx="5" ry="8" fill="#0F6E56"/>
+<ellipse cx="138.5" cy="96" rx="5" ry="8" fill="#0F6E56"/>
+<text x="132.5" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">First steps</text>
+<text x="132.5" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">1 beach</text>
+<circle cx="297.5" cy="100" r="30" fill="#E1F5EE"/>
+<circle cx="297.5" cy="91" r="3" fill="none" stroke="#0F6E56" stroke-width="2"/>
+<line x1="297.5" y1="94" x2="297.5" y2="110" stroke="#0F6E56" stroke-width="2"/>
+<line x1="289.5" y1="100" x2="305.5" y2="100" stroke="#0F6E56" stroke-width="2"/>
+<path d="M 289.5 102 Q 289.5 111 297.5 111" fill="none" stroke="#0F6E56" stroke-width="2"/>
+<path d="M 305.5 102 Q 305.5 111 297.5 111" fill="none" stroke="#0F6E56" stroke-width="2"/>
+<text x="297.5" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Shell seeker</text>
+<text x="297.5" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">10 beaches</text>
+<circle cx="462.5" cy="100" r="30" fill="#E1F5EE"/>
+<path d="M 462.5 89 C 469.5 89 471.5 98 462.5 111 C 453.5 98 455.5 89 462.5 89 Z" fill="#0F6E56"/>
+<circle cx="462.5" cy="96" r="3" fill="white"/>
+<text x="462.5" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Coastal</text>
+<text x="462.5" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">wanderer</text>
+<text x="462.5" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">25 beaches</text>
+<circle cx="627.5" cy="100" r="30" fill="#E1F5EE"/>
+<path d="M 627.5 89 L 627.5 103 L 635.5 103 Z" fill="#0F6E56"/>
+<path d="M 626.5 91 L 626.5 103 L 620.5 103 Z" fill="#0F6E56"/>
+<path d="M 616.5 108 Q 627.5 113 638.5 108 L 636.5 104 L 618.5 104 Z" fill="#0F6E56"/>
+<text x="627.5" y="147" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Wave chaser</text>
+<text x="627.5" y="163" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">50 beaches</text>
+<circle cx="132.5" cy="205" r="30" fill="#E1F5EE"/>
+<circle cx="132.5" cy="205" r="10" fill="none" stroke="#0F6E56" stroke-width="2"/>
+<path d="M 128.5 209 L 135.5 199 L 136.5 201 L 129.5 211 Z" fill="#0F6E56"/>
+<text x="132.5" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Tide tracker</text>
+<text x="132.5" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">100 beaches</text>
+<circle cx="297.5" cy="205" r="30" fill="#E1F5EE"/>
+<circle cx="288.5" cy="212" r="2.5" fill="#0F6E56"/>
+<circle cx="306.5" cy="198" r="2.5" fill="#0F6E56"/>
+<path d="M 288.5 212 Q 297.5 196 306.5 198" fill="none" stroke="#0F6E56" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="297.5" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Peninsula</text>
+<text x="297.5" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">pathfinder</text>
+<text x="297.5" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">150 beaches</text>
+<circle cx="462.5" cy="205" r="30" fill="#E1F5EE"/>
+<line x1="455.5" y1="194" x2="455.5" y2="216" stroke="#0F6E56" stroke-width="2"/>
+<path d="M 455.5 195 L 471.5 199 L 455.5 204 Z" fill="#0F6E56"/>
+<text x="462.5" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Coastline</text>
+<text x="462.5" y="267" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">conqueror</text>
+<text x="462.5" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">200 beaches</text>
+<circle cx="627.5" cy="205" r="30" fill="#E1F5EE"/>
+<path d="M 620.5 196 L 634.5 196 L 632.5 207 Q 627.5 210 622.5 207 Z" fill="#0F6E56"/>
+<path d="M 620.5 197 Q 614.5 197 616.5 203 Q 618.5 206 621.5 204" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+<path d="M 634.5 197 Q 640.5 197 638.5 203 Q 636.5 206 633.5 204" fill="none" stroke="#0F6E56" stroke-width="1.5"/>
+<line x1="627.5" y1="209" x2="627.5" y2="213" stroke="#0F6E56" stroke-width="2"/>
+<line x1="621.5" y1="215" x2="633.5" y2="215" stroke="#0F6E56" stroke-width="2"/>
+<text x="627.5" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Yaatra legend</text>
+<text x="627.5" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">300 beaches</text>
+
+<text x="30" y="330" font-family="Arial, sans-serif" font-size="16" font-weight="500" fill="#2C2C2A">Community pulse badges — crowd status updates</text>
+<circle cx="215.0" cy="390" r="30" fill="#FAEEDA"/>
+<circle cx="215.0" cy="390" r="3" fill="#854F0B"/>
+<path d="M 208.0 383 A 10 10 0 0 0 208.0 397" fill="none" stroke="#854F0B" stroke-width="2"/>
+<path d="M 222.0 383 A 10 10 0 0 1 222.0 397" fill="none" stroke="#854F0B" stroke-width="2"/>
+<text x="215.0" y="437" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">First signal</text>
+<text x="215.0" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">1 update</text>
+<circle cx="380.0" cy="390" r="30" fill="#FAEEDA"/>
+<path d="M 369.0 390 Q 380.0 381 391.0 390 Q 380.0 399 369.0 390 Z" fill="none" stroke="#854F0B" stroke-width="2"/>
+<circle cx="380.0" cy="390" r="3.5" fill="#854F0B"/>
+<text x="380.0" y="437" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Local lookout</text>
+<text x="380.0" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">10 updates</text>
+<circle cx="545.0" cy="390" r="30" fill="#FAEEDA"/>
+<rect x="537.0" y="380" width="16" height="20" rx="2" fill="none" stroke="#854F0B" stroke-width="2"/>
+<rect x="542.0" y="378" width="6" height="4" rx="1" fill="#854F0B"/>
+<line x1="541.0" y1="387" x2="549.0" y2="387" stroke="#854F0B" stroke-width="1.5"/>
+<line x1="541.0" y1="392" x2="549.0" y2="392" stroke="#854F0B" stroke-width="1.5"/>
+<line x1="541.0" y1="397" x2="546.0" y2="397" stroke="#854F0B" stroke-width="1.5"/>
+<text x="545.0" y="437" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Tide reporter</text>
+<text x="545.0" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">50 updates</text>
+<circle cx="215.0" cy="495" r="30" fill="#FAEEDA"/>
+<circle cx="210.0" cy="490" r="4" fill="#854F0B"/>
+<circle cx="220.0" cy="490" r="4" fill="#854F0B"/>
+<path d="M 204.0 504 Q 204.0 495 210.0 495 Q 216.0 495 216.0 504" fill="none" stroke="#854F0B" stroke-width="2"/>
+<path d="M 214.0 504 Q 214.0 495 220.0 495 Q 226.0 495 226.0 504" fill="none" stroke="#854F0B" stroke-width="2"/>
+<text x="215.0" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Crowd tracker</text>
+<text x="215.0" y="558" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">100 updates</text>
+<circle cx="380.0" cy="495" r="30" fill="#FAEEDA"/>
+<path d="M 380.0 484 L 389.0 488 L 389.0 497 Q 389.0 504 380.0 507 Q 371.0 504 371.0 497 L 371.0 488 Z" fill="none" stroke="#854F0B" stroke-width="2"/>
+<path d="M 376.0 495 L 379.0 499 L 385.0 491" fill="none" stroke="#854F0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="380.0" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Community</text>
+<text x="380.0" y="557" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">pillar</text>
+<text x="380.0" y="573" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">250 updates</text>
+<circle cx="545.0" cy="495" r="30" fill="#FAEEDA"/>
+<circle cx="545.0" cy="495" r="10" fill="none" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="545.0" cy="495" r="5.5" fill="none" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="545.0" cy="495" r="1.5" fill="#854F0B"/>
+<line x1="545.0" y1="495" x2="554.0" y2="489" stroke="#854F0B" stroke-width="1.5"/>
+<text x="545.0" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="500" fill="#2C2C2A">Coastal oracle</text>
+<text x="545.0" y="558" text-anchor="middle" font-family="Arial, sans-serif" font-size="11.5" fill="#5F5E5A">500 updates</text>
+
+</svg>
